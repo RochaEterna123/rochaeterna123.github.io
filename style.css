@@ -116,3 +116,33 @@ footer {
     width: 100%;
 }
 
+/* Estilo da barra de pesquisa */
+#barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#pesquisa {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#btn-pesquisar {
+    padding: 10px;
+    background-color: #009c88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-pesquisar:hover {
+    background-color: #007c6c;
+}

@@ -21,7 +21,12 @@
             <a href="developers.html">
                 <button class="botaohead">Desenvolvedores</button>
             </a> 
-        </div>    
+        </div>
+        <!-- Barra de Pesquisa -->
+        <div id="barra-pesquisa">
+            <input type="text" id="pesquisa" placeholder="Pesquisar produtos..." />
+            <button id="btn-pesquisar" onclick="pesquisar()">🔍</button>
+        </div>
     </header>
 
     <!-- Seção de Cards de Produtos -->
@@ -51,5 +56,13 @@
     <footer>
         <p id="rodape">Desenvolvido por Carlos Enrique Domingues Ponteciano Júnior</p>
     </footer>
+
+    <script>
+        function pesquisar() {
+            let pesquisaTermo = document.getElementById('pesquisa').value.toLowerCase();
+            alert("Você pesquisou por: " + pesquisaTermo);
+            // Aqui você pode implementar a lógica de filtrar os produtos ou realizar uma pesquisa no banco de dados.
+        }
+    </script>
 </body>
 </html>
