@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" type="text/css" href="src/style/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style/pesquisa.css">
+    <link rel="stylesheet" type="text/css" href="src/style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/style/produtos.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="logo.png" width="350px" height="auto">
+        </a>
+        <div id="BotaoNav">
+            <a href="index.html">
+                <button class="botaohead">Home</button>
+            </a>  
+            <a href="produtos.html">
+                <button class="botaohead">Produtos</button>
+            </a> 
+            <a href="developers.html">
+                <button class="botaohead">Desenvolvedores</button>
+            </a> 
+        </div>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+        <div id="barra-pesquisa">
+            <input type="text" id="pesquisa" placeholder="Pesquisar produtos..." />
+            <button id="btn-pesquisar" onclick="pesquisar()">🔍</button>
+        </div> 
+              
+   
+
+    <!-- Filtros -->
+    <div id="filtros">
+        <button class="filtro-btn" onclick="filtrarProdutos('todos')">Todos</button>
+        <button class="filtro-btn" onclick="filtrarProdutos('masculino')">Masculino</button>
+        <button class="filtro-btn" onclick="filtrarProdutos('feminino')">Feminino</button>
+        <button class="filtro-btn" onclick="filtrarProdutos('camisa')">Camisas</button>
+    </div>
+
+    <!-- Seção de Cards de Produtos -->
+    <section id="produtos">
+        <div class="produto-card masculino camisa">
+            <img src="camisa1.jpg" alt="Produto 1" class="produto-imagem">
+            <h3 class="produto-nome">JESUS SALVA, MANO!</h3>
+            <p class="produto-descricao">Uma verdade que transforma vidas!</p>
+            <button class="produto-btn">Comprar</button>
+        </div>
+
+        <div class="produto-card feminino camisa">
+            <img src="camisa2.jpg" alt="Produto 2" class="produto-imagem">
+            <h3 class="produto-nome">SANTIFICAÇÃO🔥</h3>
+            <p class="produto-descricao">A Santificação é um processo diário!</p>
+            <button class="produto-btn">Comprar</button>
+        </div>
+
+        <div class="produto-card masculino camisa">
+            <img src="camisa3.jpg" alt="Produto 3" class="produto-imagem">
+            <h3 class="produto-nome">CAMINHO, VERDADE E VIDA</h3>
+            <p class="produto-descricao">Declare sua fé com ousadia e estilo.</p>
+            <button class="produto-btn">Comprar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p id="rodape">Desenvolvido por Carlos Enrique Domingues Ponteciano Júnior</p>
+        <div id="contato">
+                <a href=https://www.instagram.com/rocha.eterna24?utm_source=ig_web_button_share_sheet&igsh=cGRmbWg3bHdkMm1u">
+                    <img src="instagram.png" width="50px" height="50px">
+                </a>
+        </div> 
+    </footer>
+
+    <script src="src/js/pesquisa.js"></script>
+</body>
+</html>

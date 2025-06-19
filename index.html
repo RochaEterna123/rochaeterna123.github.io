@@ -8,8 +8,10 @@
     <link rel="stylesheet" type="text/css" href="src/style/pesquisa.css">
     <link rel="stylesheet" type="text/css" href="src/style/navbar.css">
     <link rel="stylesheet" type="text/css" href="src/style/produtos.css">
+    <link rel="stylesheet" type="text/css" href="src/style/slider.css">
 </head>
 <body>
+    
     <header>
         <a href="index.html">
             <img class="logo" src="logo.png" width="350px" height="auto">
@@ -18,7 +20,7 @@
             <a href="index.html">
                 <button class="botaohead">Home</button>
             </a>  
-            <a href="vestibulinho.html">
+            <a href="produtos.html">
                 <button class="botaohead">Produtos</button>
             </a> 
             <a href="developers.html">
@@ -27,48 +29,57 @@
         </div>
     </header>
 
-    <!-- Barra de Pesquisa -->
-    <div id="barra-pesquisa">
-        <input type="text" id="pesquisa" placeholder="Pesquisar produtos..." />
-        <button id="btn-pesquisar" onclick="pesquisar()">🔍</button>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- Fim radio Buttons-->
+
+            <!--Slides imagens-->
+            <div class="slide first">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fpt%2Fimages%2Fsearch%2Fpaisagens%2520do%2520c%25C3%25A9u%2F&psig=AOvVaw09uIr8o1k3dF4YuMzWdgnU&ust=1750436455040000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID30Kby_Y0DFQAAAAAdAAAAABAE" alt="paisagem" />
+            </div>
+            <div class="slide">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wallpapers.com%2Fimagens-de-paisagens&psig=AOvVaw09uIr8o1k3dF4YuMzWdgnU&ust=1750436455040000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID30Kby_Y0DFQAAAAAdAAAAABAK" alt="paisagem" />
+            </div>
+            <div class="slide">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ocasaldafoto.com%2F36-dicas-de-fotografia-de-paisagem%2F&psig=AOvVaw09uIr8o1k3dF4YuMzWdgnU&ust=1750436455040000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID30Kby_Y0DFQAAAAAdAAAAABAU" alt="paisagem" />
+            </div>
+            <div class="slide">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fbr%2Fphoto%2Fbeautiful-lake-with-colorful-sunset-sky-tranquil-vibrant-landscape-69488045.html&psig=AOvVaw09uIr8o1k3dF4YuMzWdgnU&ust=1750436455040000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID30Kby_Y0DFQAAAAAdAAAAABAe" alt="paisagem" />
+            </div>
+            <!--Slides imagens-->
+
+            <!--Navigation-auto-->
+            <div class="navigaton-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
     </div>
-
-    <!-- Filtros -->
-    <div id="filtros">
-        <button class="filtro-btn" onclick="filtrarProdutos('todos')">Todos</button>
-        <button class="filtro-btn" onclick="filtrarProdutos('masculino')">Masculino</button>
-        <button class="filtro-btn" onclick="filtrarProdutos('feminino')">Feminino</button>
-        <button class="filtro-btn" onclick="filtrarProdutos('camisa')">Camisas</button>
-    </div>
-
-    <!-- Seção de Cards de Produtos -->
-    <section id="produtos">
-        <div class="produto-card masculino camisa">
-            <img src="camisa1.jpg" alt="Produto 1" class="produto-imagem">
-            <h3 class="produto-nome">JESUS SALVA, MANO!</h3>
-            <p class="produto-descricao">Uma verdade que transforma vidas!</p>
-            <button class="produto-btn">Comprar</button>
-        </div>
-
-        <div class="produto-card feminino camisa">
-            <img src="camisa2.jpg" alt="Produto 2" class="produto-imagem">
-            <h3 class="produto-nome">SANTIFICAÇÃO🔥</h3>
-            <p class="produto-descricao">A Santificação é um processo diário!</p>
-            <button class="produto-btn">Comprar</button>
-        </div>
-
-        <div class="produto-card masculino camisa">
-            <img src="camisa3.jpg" alt="Produto 3" class="produto-imagem">
-            <h3 class="produto-nome">CAMINHO, VERDADE E VIDA</h3>
-            <p class="produto-descricao">Declare sua fé com ousadia e estilo.</p>
-            <button class="produto-btn">Comprar</button>
-        </div>
-    </section>
 
     <footer>
         <p id="rodape">Desenvolvido por Carlos Enrique Domingues Ponteciano Júnior</p>
+        <div id="contato">
+                <a href=https://www.instagram.com/rocha.eterna24?utm_source=ig_web_button_share_sheet&igsh=cGRmbWg3bHdkMm1u">
+                    <img src="instagram.png" width="50px" height="50px">
+                </a>
+        </div> 
     </footer>
 
-    <script src="src/js/pesquisa.js"></script>
+    <script src="src/js/slider.js"></script>
 </body>
 </html>
