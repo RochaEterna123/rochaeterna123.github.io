@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="src/style/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style/pesquisa.css">
+    <link rel="stylesheet" type="text/css" href="src/style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/style/produtos.css">
 </head>
 <body>
     <header>
@@ -22,33 +25,42 @@
                 <button class="botaohead">Desenvolvedores</button>
             </a> 
         </div>
-        <!-- Barra de Pesquisa -->
-        <div id="barra-pesquisa">
-            <input type="text" id="pesquisa" placeholder="Pesquisar produtos..." />
-            <button id="btn-pesquisar" onclick="pesquisar()">🔍</button>
-        </div>
     </header>
+
+    <!-- Barra de Pesquisa -->
+    <div id="barra-pesquisa">
+        <input type="text" id="pesquisa" placeholder="Pesquisar produtos..." />
+        <button id="btn-pesquisar" onclick="pesquisar()">🔍</button>
+    </div>
+
+    <!-- Filtros -->
+    <div id="filtros">
+        <button class="filtro-btn" onclick="filtrarProdutos('todos')">Todos</button>
+        <button class="filtro-btn" onclick="filtrarProdutos('masculino')">Masculino</button>
+        <button class="filtro-btn" onclick="filtrarProdutos('feminino')">Feminino</button>
+        <button class="filtro-btn" onclick="filtrarProdutos('camisa')">Camisas</button>
+    </div>
 
     <!-- Seção de Cards de Produtos -->
     <section id="produtos">
-        <div class="produto-card">
+        <div class="produto-card masculino camisa">
             <img src="camisa1.jpg" alt="Produto 1" class="produto-imagem">
             <h3 class="produto-nome">JESUS SALVA, MANO!</h3>
-            <p class="produto-descricao">Uma verdade que transforma vidas! Não importa de onde você veio, o que importa é para onde Jesus pode te levar. 💥🙌</p>
+            <p class="produto-descricao">Uma verdade que transforma vidas!</p>
             <button class="produto-btn">Comprar</button>
         </div>
 
-        <div class="produto-card">
+        <div class="produto-card feminino camisa">
             <img src="camisa2.jpg" alt="Produto 2" class="produto-imagem">
             <h3 class="produto-nome">SANTIFICAÇÃO🔥</h3>
-            <p class="produto-descricao">A Santificação é um processo diário, e nada melhor do que carregar essa verdade com estilo!🔥</p>
+            <p class="produto-descricao">A Santificação é um processo diário!</p>
             <button class="produto-btn">Comprar</button>
         </div>
 
-        <div class="produto-card">
-            <img src="camisa1.jpg" alt="Produto 3" class="produto-imagem">
-            <h3 class="produto-nome">JESUS SALVA, MANO!</h3>
-            <p class="produto-descricao">Uma verdade que transforma vidas! Não importa de onde você veio, o que importa é para onde Jesus pode te levar. 💥🙌</p>
+        <div class="produto-card masculino camisa">
+            <img src="camisa3.jpg" alt="Produto 3" class="produto-imagem">
+            <h3 class="produto-nome">CAMINHO, VERDADE E VIDA</h3>
+            <p class="produto-descricao">Declare sua fé com ousadia e estilo.</p>
             <button class="produto-btn">Comprar</button>
         </div>
     </section>
@@ -57,12 +69,6 @@
         <p id="rodape">Desenvolvido por Carlos Enrique Domingues Ponteciano Júnior</p>
     </footer>
 
-    <script>
-        function pesquisar() {
-            let pesquisaTermo = document.getElementById('pesquisa').value.toLowerCase();
-            alert("Você pesquisou por: " + pesquisaTermo);
-            // Aqui você pode implementar a lógica de filtrar os produtos ou realizar uma pesquisa no banco de dados.
-        }
-    </script>
+    <script src="src/js/pesquisa.js"></script>
 </body>
 </html>

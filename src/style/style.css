@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    height: 50px;
+    background-color: #353535;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    height: 50px;
+    background-color: #353535;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed; /* Fixa o rodapé na tela */
+    bottom: 0; /* Fixa na parte inferior */
+    width: 100%;
+}

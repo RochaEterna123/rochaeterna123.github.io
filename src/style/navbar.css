@@ -1,0 +1,28 @@
+header {
+    background-color: #353535;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.logo {
+    margin-right: -5px;  /* Deixe a margem negativa para elas ficarem mais coladas */
+}
+
+.botaohead {
+    margin-left: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    background-color: #474747;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botaohead:hover {
+    background-color: #585858;
+}
